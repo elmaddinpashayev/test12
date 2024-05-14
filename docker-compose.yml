@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  db:
+    image: postgres
+    container_name: formdb
+    environment:
+      POSTGRES_PASSWORD:
+      POSTGRES_DB: formdb
+    ports:
+      - '5432:5432'
